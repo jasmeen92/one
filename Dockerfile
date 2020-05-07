@@ -10,6 +10,11 @@ WORKDIR /app
 
 
 COPY . /app
+#COPY . app.py /app/
+#COPY app.py /app/
+#COPY app.py /app/app.py
+
+#COPY app.py /app/
 
 ## Step 3:
 # Install packages from requirements.txt
@@ -27,4 +32,4 @@ EXPOSE 80
 ## Step 5:
 # Run app.py at container launch
 
-CMD ["app.py"]
+CMD ["python","app.py"]
