@@ -8,6 +8,7 @@ WORKDIR /app
 ## Step 2:
 # Copy source code to working directory
 
+
 COPY . /app
 
 ## Step 3:
