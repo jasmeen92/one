@@ -7,12 +7,9 @@ WORKDIR /app
 
 ## Step 2:
 # Copy source code to working directory
+ 
+COPY . app.py /app/
 
-
-COPY . /app
-#COPY . app.py /app/
-#COPY app.py /app/
-#COPY app.py /app/app.py
 
 #COPY app.py /app/
 
@@ -32,4 +29,4 @@ EXPOSE 80
 ## Step 5:
 # Run app.py at container launch
 
-CMD ["python","app.py"]
+CMD ["python", "app.py"]
