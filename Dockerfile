@@ -11,8 +11,6 @@ WORKDIR /app
 COPY . app.py /app/
 
 
-#COPY app.py /app/
-
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013

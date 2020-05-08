@@ -16,5 +16,5 @@ docker image ls
 # Run flask app
 
 docker run -it demolocal bash
-#docker run -p 8000:80 demolocal
+docker run -p 8000:80 demolocal
 #docker run -p 127.0.0.1:80:8000 demolocal  
