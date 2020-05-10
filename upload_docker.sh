@@ -7,9 +7,13 @@
 # Create dockerpath
 # dockerpath=<your docker ID/path>
 
+dockerpath=jasmeen92/project
+
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "e5dca948463c and demolocal: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+
+docker push jasmeen92/project:demolocal
