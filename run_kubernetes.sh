@@ -13,7 +13,7 @@ dockerpath=jasmeen92/project
 #kubectl create deployment demolocal --image=app.py
 #docker stack deploy --compose-file docker-compose.yml
 
-docker stack deploy --namespace app --compose-file docker-compose.yml mystack
+docker stack deploy --namespace app --compose-file docker-compose.yml demolocal
 
 # Step 3:
 # List kubernetes pods
