@@ -1,0 +1,51 @@
+(.devops) jas@jasmeen-E490:~/DevOps_Microservices/project-ml-microservice-kubernetes$ kubectl describe pod flaskskearlndemo
+Name:         flaskskearlndemo
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.99.100
+Start Time:   Tue, 12 May 2020 16:51:36 +0530
+Labels:       app=flaskskearlndemo
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.4
+IPs:
+  IP:  172.17.0.4
+Containers:
+  flaskskearlndemo:
+    Container ID:   
+    Image:          jasmeen92/project/demolocal
+    Image ID:       
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-qzn2v (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-qzn2v:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-qzn2v
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  2m8s                default-scheduler  Successfully assigned default/flaskskearlndemo to minikube
+  Normal   Pulling    36s (x4 over 2m8s)  kubelet, minikube  Pulling image "jasmeen92/project/demolocal"
+  Warning  Failed     26s (x4 over 2m4s)  kubelet, minikube  Failed to pull image "jasmeen92/project/demolocal": rpc error: code = Unknown desc = Error response from daemon: pull access denied for jasmeen92/project/demolocal, repository does not exist or may require 'docker login': denied: requested access to the resource is denied
+  Warning  Failed     26s (x4 over 2m4s)  kubelet, minikube  Error: ErrImagePull
+  Normal   BackOff    3s (x6 over 2m4s)   kubelet, minikube  Back-off pulling image "jasmeen92/project/demolocal"
+  Warning  Failed     3s (x6 over 2m4s)   kubelet, minikube  Error: ImagePullBackOff
+
