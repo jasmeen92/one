@@ -10,7 +10,13 @@ dockerpath=jasmeen92/project
 # Step 2
 # Run the Docker Hub container with kubernetes
 
-kubectl run --image=app.py demolocal --port=80
+
+
+kubectl run flaskskearlndemo\
+    --generator=run-pod/v1\
+    --image=$dockerpath\
+    --port=80 --labels app=flaskskearlndemo
+
 
 # Step 3:
 # List kubernetes pods
@@ -20,5 +26,5 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 
-kubectl port-forward deployment/demolocal  8000:80
+kubectl port-forward flaskskearlndemo 8000:80
 
