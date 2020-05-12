@@ -10,8 +10,7 @@ dockerpath=jasmeen92/project
 # Step 2
 # Run the Docker Hub container with kubernetes
 
-
-kubectl create deployment demolocal --image=app.py
+kubectl run --image=app.py demolocal --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -21,6 +20,5 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 
-kubectl port-forward demolocal  8000:80
-
+kubectl port-forward deployment/demolocal  8000:80
 
