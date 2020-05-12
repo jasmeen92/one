@@ -12,10 +12,10 @@ dockerpath="jasmeen92/project/demolocal"
 
 
 
-kubectl run flaskskearlndemo\
+kubectl run demolocal\
     --generator=run-pod/v1\
     --image=$dockerpath\
-    --port=80 --labels app=flaskskearlndemo
+    --port=80 --labels app=demolocal
 
 
 # Step 3:
@@ -26,5 +26,5 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 
-kubectl port-forward flaskskearlndemo 8000:80
+kubectl port-forward demolocal 8000:80
 
