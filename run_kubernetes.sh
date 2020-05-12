@@ -4,7 +4,7 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=jasmeen92/project
+dockerpath="jasmeen92/project/demolocal"
 
 
 # Step 2
