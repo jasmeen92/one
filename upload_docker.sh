@@ -7,7 +7,7 @@
 # Create dockerpath
 # dockerpath=<your docker ID/path>
 
-dockerpath=jasmeen92/project
+dockerpath=jasmeen92/project/demolocal
 
 # Step 2:  
 # Authenticate & tag
