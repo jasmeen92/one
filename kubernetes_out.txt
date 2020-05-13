@@ -1,13 +1,13 @@
 (.devops) jas@jasmeen-E490:~/DevOps_Microservices/project-ml-microservice-kubernetes$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): deployments.apps "udacityml" already exists
 Flag --generator has been deprecated, has no effect and will be removed in the future.
-Error from server (AlreadyExists): pods "demolocal" already exists
-NAME        READY   STATUS    RESTARTS   AGE
-demolocal   1/1     Running   0          4m31s
+Error from server (AlreadyExists): pods "udacityml" already exists
+NAME                         READY   STATUS    RESTARTS   AGE
+demolocal                    1/1     Running   1          14h
+udacityml                    1/1     Running   0          14s
+udacityml-5c899f75b4-kmnd4   1/1     Running   0          6m6s
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
-Handling connection for 8000
-Handling connection for 8000
-Handling connection for 8000
 Handling connection for 8000
 Handling connection for 8000
 

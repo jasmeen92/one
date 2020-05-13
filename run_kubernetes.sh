@@ -11,11 +11,12 @@ dockerpath="jasmeen92/project:demolocal"
 # Run the Docker Hub container with kubernetes
 
 
+kubectl create deployment udacityml --image=$dockerpath
 
-kubectl run demolocal\
+kubectl run udacityml\
     --generator=run-pod/v1\
     --image=$dockerpath\
-    --port=80 --labels app=demolocal
+    --port=80 --labels app=udacityml
 
 
 # Step 3:
@@ -26,5 +27,5 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 
-kubectl port-forward demolocal 8000:80
+kubectl port-forward udacityml 8000:80
 
